@@ -15,7 +15,7 @@ function generatePasswordChoice() {
 
   if (length < 8 || length > 128 || isNaN(length)) {
     alert("OH NO! Please input a number between 8 and 128, THANK YOU!");
-   return generatePasswordChoice();
+    return generatePasswordChoice();
   }
   
 
