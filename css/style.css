@@ -15,12 +15,24 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
-}
+  background: url(../img/20180521_114933.jpg);
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 
+}
+h1 {
+  color: rgba(0,0,0,0)
+}
+h2 {
+  color: rgb(100,150,255)
+}
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  
 }
 
 header {
@@ -28,10 +40,10 @@ header {
   padding: 20px;
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
+  
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
@@ -40,6 +52,8 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  background-color:rgba(0, 0, 0, 0.69);
+ 
 }
 
 .card-header::after {
@@ -74,7 +88,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgba(100,150,255,0.5);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -87,7 +101,9 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
+.btn:hover{
+  background-color: rgba(0,0,0,0.4);
+}
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
@@ -107,15 +123,16 @@ button[disabled] {
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 5px;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  background-color: rgba(255,255,255,0.8);
 }
 
 @media (max-width: 690px) {
